@@ -6,61 +6,88 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
             <connections>
-                <outlet property="aquarium" destination="v9x-0H-OhO" id="wCq-wv-Y52"/>
-                <outlet property="badSmallFish" destination="eQB-S5-dZV" id="Bpx-1b-WOY"/>
-                <outlet property="goodSmallFish" destination="w8p-Ey-p7R" id="pyq-XX-KWm"/>
-                <outlet property="view" destination="iN0-l3-epB" id="iGP-3E-7g2"/>
+                <outlet property="aquarium" destination="xeH-bt-FON" id="iTf-ie-BlE"/>
+                <outlet property="mySwitch" destination="EAZ-hs-ZVC" id="ePA-40-DOx"/>
+                <outlet property="mySwitchSound" destination="ozV-Do-yz3" id="cGI-rm-g4B"/>
+                <outlet property="view" destination="iN0-l3-epB" id="JpA-AZ-gSk"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4K-kk-eAS">
-                    <rect key="frame" x="185" y="460" width="127" height="40"/>
-                    <color key="backgroundColor" red="0.86673964791578961" green="0.55738589638157898" blue="0.46581358027105269" alpha="1" colorSpace="deviceRGB"/>
-                    <state key="normal" title="Add Bad Fish">
-                        <color key="titleColor" red="0.24610848015263168" green="0.55738589638157898" blue="0.98596160658684218" alpha="1" colorSpace="deviceRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="addBadFish" destination="-1" eventType="touchUpInside" id="qVp-HF-KnA"/>
-                    </connections>
-                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Aquarium" translatesAutoresizingMaskIntoConstraints="NO" id="xeH-bt-FON">
+                    <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-Qp-hJv">
-                    <rect key="frame" x="8" y="460" width="124" height="40"/>
-                    <color key="backgroundColor" red="0.062745098040000002" green="0.57647058819999997" blue="0.0039215686269999999" alpha="0.45000000000000001" colorSpace="calibratedRGB"/>
+                    <rect key="frame" x="0.0" y="287" width="145" height="33"/>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.80000000000000004" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <state key="normal" title="Add Good Fish">
                         <color key="titleColor" red="0.22745099660000001" green="0.5" blue="0.89259709178421054" alpha="1" colorSpace="deviceRGB"/>
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="addGoodFish" destination="-1" eventType="touchUpInside" id="IWp-HP-Vji"/>
                     </connections>
                 </button>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9x-0H-OhO">
-                    <rect key="frame" x="0.0" y="18" width="320" height="419"/>
-                    <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Good.png" translatesAutoresizingMaskIntoConstraints="NO" id="w8p-Ey-p7R" userLabel="fish">
-                            <rect key="frame" x="139" y="0.0" width="42" height="39"/>
-                        </imageView>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bad.png" translatesAutoresizingMaskIntoConstraints="NO" id="eQB-S5-dZV">
-                            <rect key="frame" x="256" y="8" width="49" height="42"/>
-                            <color key="backgroundColor" red="0.44622779610000002" green="0.67418791119999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="tintColor" red="0.44622779610000002" green="0.67418791119999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" red="0.74509803921568629" green="0.98039215686274506" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yd-gN-Wz8">
+                    <rect key="frame" x="303" y="287" width="143" height="33"/>
+                    <color key="backgroundColor" red="1" green="0.74661610764750241" blue="0.24288235482663567" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Add Gold Fish">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addGoldFish" destination="-1" eventType="touchUpInside" id="7b6-6H-m1x"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fG-RM-bAv" userLabel="Reset">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="16"/>
+                    <color key="backgroundColor" red="0.22745099660000001" green="0.5" blue="0.89259709180000002" alpha="1" colorSpace="deviceRGB"/>
+                    <state key="normal" title="Reset">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="check" destination="-1" eventType="touchUpInside" id="8Zj-bh-e1h"/>
+                    </connections>
+                </button>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAZ-hs-ZVC">
+                    <rect key="frame" x="454" y="287" width="51" height="31"/>
+                    <color key="onTintColor" red="0.88086682260000004" green="0.17937875810000001" blue="0.17389172380000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="switchHealth:" destination="-1" eventType="valueChanged" id="1ZC-9E-IWN"/>
+                    </connections>
+                </switch>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ozV-Do-yz3">
+                    <rect key="frame" x="511" y="287" width="51" height="31"/>
+                    <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="switchSound:" destination="-1" eventType="valueChanged" id="FcV-cm-vxd"/>
+                    </connections>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4K-kk-eAS">
+                    <rect key="frame" x="153" y="287" width="142" height="33"/>
+                    <color key="backgroundColor" red="0.88086682257026139" green="0.17937875805013109" blue="0.17389172377377379" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="Add Bad Fish">
+                        <color key="titleColor" red="0.98080360889434814" green="0.91340350970411055" blue="0.87535009338439418" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addBadFish" destination="-1" eventType="touchUpInside" id="f8k-Ov-JeM"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <point key="canvasLocation" x="536" y="383"/>
+            <point key="canvasLocation" x="951" y="960"/>
         </view>
     </objects>
     <resources>
-        <image name="Bad.png" width="225" height="225"/>
-        <image name="Good.png" width="190" height="190"/>
+        <image name="Aquarium" width="710" height="395"/>
     </resources>
 </document>
