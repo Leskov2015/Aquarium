@@ -17,10 +17,10 @@
             <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Aquarium" translatesAutoresizingMaskIntoConstraints="NO" id="xeH-bt-FON">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Aquarium" translatesAutoresizingMaskIntoConstraints="NO" id="xeH-bt-FON">
                     <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-Qp-hJv">
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbe-Qp-hJv">
                     <rect key="frame" x="0.0" y="287" width="145" height="33"/>
                     <color key="backgroundColor" red="0.25098039220000001" green="0.80000000000000004" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -31,19 +31,13 @@
                         <action selector="addGoodFish" destination="-1" eventType="touchUpInside" id="IWp-HP-Vji"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yd-gN-Wz8">
-                    <rect key="frame" x="303" y="287" width="143" height="33"/>
-                    <color key="backgroundColor" red="1" green="0.74661610764750241" blue="0.24288235482663567" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="Add Gold Fish">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="addGoldFish" destination="-1" eventType="touchUpInside" id="7b6-6H-m1x"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fG-RM-bAv" userLabel="Reset">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fG-RM-bAv" userLabel="Reset">
                     <rect key="frame" x="0.0" y="0.0" width="50" height="16"/>
                     <color key="backgroundColor" red="0.22745099660000001" green="0.5" blue="0.89259709180000002" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Rmt-4b-b07"/>
+                        <constraint firstAttribute="width" constant="50" id="c0h-ta-Ibt"/>
+                    </constraints>
                     <state key="normal" title="Reset">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -52,7 +46,7 @@
                         <action selector="check" destination="-1" eventType="touchUpInside" id="8Zj-bh-e1h"/>
                     </connections>
                 </button>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAZ-hs-ZVC">
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EAZ-hs-ZVC">
                     <rect key="frame" x="454" y="287" width="51" height="31"/>
                     <color key="onTintColor" red="0.88086682260000004" green="0.17937875810000001" blue="0.17389172380000001" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -60,7 +54,7 @@
                         <action selector="switchHealth:" destination="-1" eventType="valueChanged" id="1ZC-9E-IWN"/>
                     </connections>
                 </switch>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ozV-Do-yz3">
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ozV-Do-yz3">
                     <rect key="frame" x="511" y="287" width="51" height="31"/>
                     <color key="onTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="thumbTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -68,7 +62,7 @@
                         <action selector="switchSound:" destination="-1" eventType="valueChanged" id="FcV-cm-vxd"/>
                     </connections>
                 </switch>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4K-kk-eAS">
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x4K-kk-eAS">
                     <rect key="frame" x="153" y="287" width="142" height="33"/>
                     <color key="backgroundColor" red="0.88086682257026139" green="0.17937875805013109" blue="0.17389172377377379" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -80,8 +74,37 @@
                         <action selector="addBadFish" destination="-1" eventType="touchUpInside" id="f8k-Ov-JeM"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yd-gN-Wz8">
+                    <rect key="frame" x="303" y="287" width="143" height="33"/>
+                    <color key="backgroundColor" red="1" green="0.74661610764750241" blue="0.24288235482663567" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Add Gold Fish">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="addGoldFish" destination="-1" eventType="touchUpInside" id="7b6-6H-m1x"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xeH-bt-FON" secondAttribute="bottom" id="2J2-Ub-Qcx"/>
+                <constraint firstItem="xeH-bt-FON" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4X3-go-Ic9"/>
+                <constraint firstItem="0fG-RM-bAv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5pr-lb-MN0"/>
+                <constraint firstAttribute="bottom" secondItem="3Yd-gN-Wz8" secondAttribute="bottom" id="8AJ-lU-Cww"/>
+                <constraint firstItem="ozV-Do-yz3" firstAttribute="leading" secondItem="EAZ-hs-ZVC" secondAttribute="trailing" constant="8" id="95w-zt-F9o"/>
+                <constraint firstAttribute="bottom" secondItem="x4K-kk-eAS" secondAttribute="bottom" id="9Uu-8F-Ukk"/>
+                <constraint firstAttribute="trailing" secondItem="ozV-Do-yz3" secondAttribute="trailing" constant="8" id="BJf-01-jch"/>
+                <constraint firstItem="3Yd-gN-Wz8" firstAttribute="leading" secondItem="x4K-kk-eAS" secondAttribute="trailing" constant="8" id="DB7-6s-DXU"/>
+                <constraint firstItem="EAZ-hs-ZVC" firstAttribute="leading" secondItem="3Yd-gN-Wz8" secondAttribute="trailing" constant="8" id="ELb-3E-iJB"/>
+                <constraint firstAttribute="bottom" secondItem="ozV-Do-yz3" secondAttribute="bottom" constant="2" id="SD7-FA-JfO"/>
+                <constraint firstAttribute="bottom" secondItem="EAZ-hs-ZVC" secondAttribute="bottom" constant="2" id="T4y-e4-iIJ"/>
+                <constraint firstAttribute="trailing" secondItem="xeH-bt-FON" secondAttribute="trailing" id="daB-3P-UjM"/>
+                <constraint firstItem="wbe-Qp-hJv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="o0g-YI-Gjj"/>
+                <constraint firstItem="0fG-RM-bAv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pNX-YS-c0P"/>
+                <constraint firstItem="x4K-kk-eAS" firstAttribute="leading" secondItem="wbe-Qp-hJv" secondAttribute="trailing" constant="8" id="tIT-ww-5lb"/>
+                <constraint firstAttribute="bottom" secondItem="wbe-Qp-hJv" secondAttribute="bottom" id="uGQ-xR-cxL"/>
+                <constraint firstItem="xeH-bt-FON" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zqA-5u-rjs"/>
+            </constraints>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <point key="canvasLocation" x="951" y="960"/>
