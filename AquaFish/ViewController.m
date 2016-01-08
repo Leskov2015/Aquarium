@@ -52,7 +52,7 @@ static ViewController *theViewController = nil;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSString *sound = [[NSBundle mainBundle] pathForResource:@"Sound Aqua" ofType:@"mp3"];
+    NSString *sound = [[NSBundle mainBundle] pathForResource:@"Sound_Aqua" ofType:@"mp3"];
     self.player =[[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:sound] error:NULL];
     [NSTimer scheduledTimerWithTimeInterval:0.02f target:self selector:@selector(aquaRun) userInfo:nil repeats:YES];
     _arrayForFish = [NSMutableArray new];

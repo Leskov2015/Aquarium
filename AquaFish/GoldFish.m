@@ -20,7 +20,7 @@
 {
     self = [super init];
     if (self) {
-        self.image = [UIImage imageNamed:@"Gold Fish.png"];
+        self.image = [UIImage imageNamed:@"Gold fish.png"];
     }
     return self;
 }

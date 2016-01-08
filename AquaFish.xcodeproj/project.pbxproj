@@ -18,10 +18,10 @@
 		8453F4841C22CCAB007B7B48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8453F4831C22CCAB007B7B48 /* UIKit.framework */; };
 		8453F4861C22CCBC007B7B48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8453F4851C22CCBC007B7B48 /* Foundation.framework */; };
 		8453F48B1C22F55C007B7B48 /* GoodFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453F48A1C22F55C007B7B48 /* GoodFish.m */; };
-		8453F48D1C22F6C3007B7B48 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8453F48C1C22F6C3007B7B48 /* ViewController.xib */; };
 		8453F4981C22FF8D007B7B48 /* BadFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453F4971C22FF8D007B7B48 /* BadFish.m */; };
 		8453F49C1C244698007B7B48 /* Fish.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453F49B1C244698007B7B48 /* Fish.m */; };
-		8477AD7E1C40312D000BD1A4 /* Sound Aqua.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8477AD7D1C40312D000BD1A4 /* Sound Aqua.mp3 */; };
+		8477AD7E1C40312D000BD1A4 /* Sound_Aqua.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8477AD7D1C40312D000BD1A4 /* Sound_Aqua.mp3 */; };
+		8477AD821C403BB9000BD1A4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8477AD811C403BB9000BD1A4 /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +54,12 @@
 		8453F4851C22CCBC007B7B48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8453F4891C22F55C007B7B48 /* GoodFish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoodFish.h; sourceTree = "<group>"; };
 		8453F48A1C22F55C007B7B48 /* GoodFish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoodFish.m; sourceTree = "<group>"; };
-		8453F48C1C22F6C3007B7B48 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = ../../../../.Trash/ViewController.xib; sourceTree = "<group>"; };
 		8453F4961C22FF8D007B7B48 /* BadFish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BadFish.h; sourceTree = "<group>"; };
 		8453F4971C22FF8D007B7B48 /* BadFish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BadFish.m; sourceTree = "<group>"; };
 		8453F49A1C244698007B7B48 /* Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
 		8453F49B1C244698007B7B48 /* Fish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fish.m; sourceTree = "<group>"; };
-		8477AD7D1C40312D000BD1A4 /* Sound Aqua.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Sound Aqua.mp3"; sourceTree = SOURCE_ROOT; };
+		8477AD7D1C40312D000BD1A4 /* Sound_Aqua.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Sound_Aqua.mp3; sourceTree = SOURCE_ROOT; };
+		8477AD811C403BB9000BD1A4 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,11 +107,11 @@
 		8453F4561C21B99B007B7B48 /* AquaFish */ = {
 			isa = PBXGroup;
 			children = (
+				8477AD811C403BB9000BD1A4 /* ViewController.xib */,
 				8453F45B1C21B99B007B7B48 /* AppDelegate.h */,
 				8453F45C1C21B99B007B7B48 /* AppDelegate.m */,
 				8453F45E1C21B99B007B7B48 /* ViewController.h */,
 				8453F45F1C21B99B007B7B48 /* ViewController.m */,
-				8453F48C1C22F6C3007B7B48 /* ViewController.xib */,
 				8453F4641C21B99B007B7B48 /* Images.xcassets */,
 				8453F4661C21B99B007B7B48 /* LaunchScreen.xib */,
 				8453F4991C22FFA1007B7B48 /* Fish */,
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				8453F4581C21B99B007B7B48 /* Info.plist */,
-				8477AD7D1C40312D000BD1A4 /* Sound Aqua.mp3 */,
+				8477AD7D1C40312D000BD1A4 /* Sound_Aqua.mp3 */,
 				8453F4591C21B99B007B7B48 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -242,9 +242,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8477AD7E1C40312D000BD1A4 /* Sound Aqua.mp3 in Resources */,
+				8477AD7E1C40312D000BD1A4 /* Sound_Aqua.mp3 in Resources */,
 				8453F4681C21B99B007B7B48 /* LaunchScreen.xib in Resources */,
-				8453F48D1C22F6C3007B7B48 /* ViewController.xib in Resources */,
+				8477AD821C403BB9000BD1A4 /* ViewController.xib in Resources */,
 				8453F4651C21B99B007B7B48 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
